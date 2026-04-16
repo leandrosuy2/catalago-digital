@@ -24,7 +24,7 @@ if( !$_SERVER['HTTPS'] && $_SERVER['HTTP_X_FORWARDED_PROTO'] != 'https' ) {
 	exit;
 }
 
-$simple_url = "pedeue-sistema-completo.zwykti.easypanel.host";
+$simple_url = "pedeue.com";
 
 $suport_url = $httprotocol."conheca.".$simple_url."/";
 $system_url = $httprotocol.$simple_url."/administracao";

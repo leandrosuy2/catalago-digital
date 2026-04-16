@@ -30,7 +30,7 @@ $firstdomain = $firstdomain[0];
 
     $insubdominio = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
 
-    if( $insubdominio == $firstdomain || $insubdominio == "www" || $insubdominio == "pedeue-sistema-completo" ) {
+    if( $insubdominio == $firstdomain || $insubdominio == "www" || $insubdominio == "pedeue" || $insubdominio == "pedeue-sistema-completo" ) {
 
       $insubdominio = "";
 
