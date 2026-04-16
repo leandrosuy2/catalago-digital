@@ -596,11 +596,11 @@ global $simple_url;
                         <label>URL:</label>
                         <span class="form-tip">A URL que seus clientes usarão para acessar a estabelecimento, não serão permitidos acentos, cedilha, pontos e caracteres especiais.</span>
                         <div class="row lowpadd">
+                          <div class="col-md-9 col-xs-6 col-sm-6">
+                            <input type="text" id="input-nome" name="url" value="<?php echo $simple_url; ?>/" DISABLED>
+                          </div>
                           <div class="col-md-3 col-xs-6 col-sm-6">
                             <input class="subdomain" type="text" name="subdominio" placeholder="estabelecimento" value="<?php echo subdomain( htmlclean( $_POST['subdominio'] ) ); ?>">
-                          </div>
-                          <div class="col-md-9 col-xs-6 col-sm-6">
-                            <input type="text" id="input-nome" name="url" value=".<?php echo $simple_url; ?>" DISABLED>
                           </div>
                         </div>
                     </div>

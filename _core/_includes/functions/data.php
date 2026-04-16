@@ -1488,7 +1488,7 @@ function delete_assinatura($id)
 
 					}
 
-				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o subdominio ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o subdominio ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -1564,7 +1564,7 @@ function delete_assinatura($id)
 
 					}
 
-				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." editou o subdominio ".$subdominio_antigo.".".$simple_url." para ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." editou o subdominio ".$simple_url."/".$subdominio_antigo." para ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -1639,7 +1639,7 @@ function delete_assinatura($id)
 
 					}
 
-				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o subdominio ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o subdominio ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -1939,7 +1939,7 @@ function delete_assinatura($id)
 
 					}
 
-					log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o estabelecimento ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+					log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o estabelecimento ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -2359,7 +2359,7 @@ function delete_assinatura($id)
 
 					}
 
-					log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o estabelecimento ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+					log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." cadastrou o estabelecimento ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -2769,7 +2769,7 @@ function delete_assinatura($id)
 
 					}
 
-				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." editou o estabelecimento ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." editou o estabelecimento ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -2847,7 +2847,7 @@ function delete_assinatura($id)
 
 					}
 
-			log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o estabelecimento ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+			log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o estabelecimento ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 
@@ -2968,7 +2968,7 @@ function delete_assinatura($id)
 
 					}
 
-				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o estabelecimento ".$subdominio.".".$simple_url." às ".databr( date('Y-m-d H:i:s') ) );
+				log_register( $log_uid,$log_lid, $log_user_tipo." ".$log_nome." removeu o estabelecimento ".$simple_url."/".$subdominio." às ".databr( date('Y-m-d H:i:s') ) );
 
 
 

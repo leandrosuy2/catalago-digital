@@ -305,8 +305,8 @@ if( !$pagina OR $pagina > $total_paginas OR !is_numeric($pagina) ) {
 
 							<?php
                             while ( $data = mysqli_fetch_array( $sql ) ) {
-                            $gourl = $httprotocol.$data['subdominio'].".".$simple_url;
-                            $gourlclean = $data['subdominio'].".".$simple_url;
+                            $gourl = $httprotocol.$simple_url."/".$data['subdominio'];
+                            $gourlclean = $simple_url."/".$data['subdominio'];
                             ?>
 
 							<tr>

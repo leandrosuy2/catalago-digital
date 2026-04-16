@@ -61,7 +61,7 @@
 <?php
 global $simple_url;
 global $httprotocol;
-$meudominio = $httprotocol.data_info("estabelecimentos",$_SESSION['estabelecimento']['id'],"subdominio").".".$simple_url;
+$meudominio = $httprotocol.$simple_url."/".data_info("estabelecimentos",$_SESSION['estabelecimento']['id'],"subdominio");
 ?>
 
 <nav class="navbar pull-right hidden-xs hidden-sm">

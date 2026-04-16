@@ -342,9 +342,9 @@ if( !$pagina OR $pagina > $total_paginas OR !is_numeric($pagina) ) {
                                     	$enome = $data['rel_estabelecimentos_nome'];
                                     }
                                     if( data_info("estabelecimentos",$data['rel_estabelecimentos_id'],"subdominio") ) {
-                                    	$eurl = $httprotocol.data_info("estabelecimentos",$data['rel_estabelecimentos_id'],"subdominio").".".$simple_url;
+                                    	$eurl = $httprotocol.$simple_url."/".data_info("estabelecimentos",$data['rel_estabelecimentos_id'],"subdominio");
                                     } else {
-                                    	$eurl = $httprotocol.$data['rel_estabelecimentos_subdominio'].".".$simple_url;
+                                    	$eurl = $httprotocol.$simple_url."/".$data['rel_estabelecimentos_subdominio'];
                                     }
                                     ?>
                                     <div class="fake-table-data"><a target="_blank" href="<?php echo $eurl; ?>"><?php echo $enome; ?></a></div>

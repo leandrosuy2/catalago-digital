@@ -60,55 +60,56 @@ $_SESSION["local"] = $local;
 
 
 
-    <link rel="manifest" href="manifest.webmanifest">
+    <?php $cdn_url = $httprotocol.$simple_url; ?>
+    <link rel="manifest" href="<?php echo $app['url']; ?>/manifest.webmanifest">
 
    
 
 
           <!-- include the script -->
-    <script src="<?php echo $app['url']; ?>/_core/_cdn/app/js/alertify.min.js"></script>
+    <script src="<?php echo $cdn_url; ?>/_core/_cdn/app/js/alertify.min.js"></script>
     
       <!-- include the style -->
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/alertify.min.css" />
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/alertify.min.css" />
       <!-- include a theme -->
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/default.min.css" />
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/default.min.css" />
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/class.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/class.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/forms.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/forms.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/typography.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/typography.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/template.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/template.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/theme.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/theme.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/default.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/default.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/app/css/novo.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/app/css/novo.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/lineicons/css/LineIcons.min.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/lineicons/css/LineIcons.min.css">
 
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/fonts/style.min.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/fonts/style.min.css">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/_core/_cdn/sidr/css/jquery.sidr.light.min.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/_core/_cdn/sidr/css/jquery.sidr.light.min.css">
 
-    <link  href="<?php echo $app['url']; ?>/_core/_cdn/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link  href="<?php echo $cdn_url; ?>/_core/_cdn/fancybox/css/jquery.fancybox.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/app/estabelecimento/css/style.php?id=<?php echo $app['id']; ?>">
-    <link rel="stylesheet" href="<?php echo $app['url']; ?>/app/estabelecimento/css/mp.css">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/app/estabelecimento/css/style.php?id=<?php echo $app['id']; ?>">
+    <link rel="stylesheet" href="<?php echo $cdn_url; ?>/app/estabelecimento/css/mp.css">
 
-    <script src="<?php echo $app['url']; ?>/_core/_cdn/jquery/js/jquery.min.js"></script>
+    <script src="<?php echo $cdn_url; ?>/_core/_cdn/jquery/js/jquery.min.js"></script>
 
-    <script src="<?php echo $app['url']; ?>/_core/_cdn/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="<?php echo $cdn_url; ?>/_core/_cdn/fancybox/js/jquery.fancybox.min.js"></script>
 
-    <!-- <script src="<?php echo $app['url']; ?>/_core/_cdn/instantclick/js/instantclick.min.js"></script> -->
+    <!-- <script src="<?php echo $cdn_url; ?>/_core/_cdn/instantclick/js/instantclick.min.js"></script> -->
 
-    <script src="<?php echo $app['url']; ?>/app/estabelecimento/js/script.php?insubdominiourl=<?php echo $insubdominiourl; ?>&virtualpath=<?php echo $virtualpath; ?>"></script>
+    <script src="<?php echo $cdn_url; ?>/app/estabelecimento/js/script.php?insubdominiourl=<?php echo $insubdominiourl; ?>&virtualpath=<?php echo $virtualpath; ?>"></script>
 
 
 

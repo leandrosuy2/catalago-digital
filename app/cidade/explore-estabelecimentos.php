@@ -83,7 +83,7 @@
 					";					
 					$query_estabelecimentos = mysqli_query( $db_con, $query );
 					while ( $data_estabelecimentos = mysqli_fetch_array( $query_estabelecimentos ) ) {
-					$gourl = $httprotocol.$data_estabelecimentos['estabelecimento_subdominio'].".".$simple_url;
+					$gourl = $httprotocol.$simple_url."/".$data_estabelecimentos['estabelecimento_subdominio'];
 					?>
 
 						<div class="col-md-3 col-infinite">

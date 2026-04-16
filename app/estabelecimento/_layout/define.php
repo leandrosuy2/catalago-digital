@@ -5,7 +5,7 @@ global $httprotocol;
 $define_query = mysqli_query( $db_con, "SELECT * FROM estabelecimentos WHERE id = '$insubdominioid' LIMIT 1");
 $define_data = mysqli_fetch_array( $define_query );
 
-$app['url'] = $httprotocol.$insubdominiourl.".".$simple_url;
+$app['url'] = $httprotocol.$simple_url."/".$insubdominiourl;
 
 $app['type'] = "1";
 $app['id'] = $define_data['id'];

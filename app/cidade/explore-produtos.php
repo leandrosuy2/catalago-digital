@@ -95,7 +95,7 @@
 						} else {
 							$valor_final = $data_produtos['produto_valor'];
 						}
-					$gourl = $httprotocol.$data_produtos['subdominio'].".".$simple_url;
+					$gourl = $httprotocol.$simple_url."/".$data_produtos['subdominio'];
 					?>
 
 						<div class="col-md-3 col-infinite">

@@ -64,9 +64,7 @@ function just_url_subdomain($sub) {
 		$sub = "";
 	}
 	if($sub) {
-		$url = str_replace($httprotocol, "", $just_url);
-		$url = $sub.".".$url;
-		$url = $httprotocol.$url;
+		$url = $just_url."/".$sub;
 	} else {
 		$url = $just_url;
 	}

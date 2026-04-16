@@ -17,7 +17,7 @@ include('../_layout/modal.php');
 
 global $db_con;
 $eid = $_SESSION['estabelecimento']['id'];
-$meudominio = $httprotocol.data_info("estabelecimentos",$_SESSION['estabelecimento']['id'],"subdominio").".".$simple_url;
+$meudominio = $httprotocol.$simple_url."/".data_info("estabelecimentos",$_SESSION['estabelecimento']['id'],"subdominio");
 
 ?>
 

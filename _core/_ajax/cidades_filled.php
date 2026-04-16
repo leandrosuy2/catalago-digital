@@ -33,5 +33,5 @@ ORDER BY cidades.nome ASC
 $query_cidades = mysqli_query( $db_con, $query_cidades );
 while ( $data_cidade = mysqli_fetch_array( $query_cidades ) ) {
 ?>
-<option value="<?php echo $httprotocol.data_info( "cidades",$data_cidade['cidade_id'],"subdominio" ).".".$simple_url; ?>" <?php if( $cidade == $data_cidade['cidade_id'] ) { echo 'SELECTED'; }?>><?php echo $data_cidade['cidade_nome']; ?></option>
+<option value="<?php echo $httprotocol.$simple_url."/".data_info( "cidades",$data_cidade['cidade_id'],"subdominio" ); ?>" <?php if( $cidade == $data_cidade['cidade_id'] ) { echo 'SELECTED'; }?>><?php echo $data_cidade['cidade_nome']; ?></option>
 <?php } ?>

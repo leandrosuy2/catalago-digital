@@ -1366,15 +1366,15 @@ global $simple_url;
 
                         <div class="row lowpadd">
 
-                          <div class="col-md-3 col-xs-6 col-sm-6">
+                          <div class="col-md-9 col-xs-6 col-sm-6">
 
-                            <input class="subdomain" type="text" name="subdominio" placeholder="estabelecimento" value="<?php echo subdomain( htmlclean( $dataestabelecimento['subdominio'] ) ); ?>">
+                            <input type="text" id="input-nome" name="url" value="<?php echo $simple_url; ?>/" DISABLED>
 
                           </div>
 
-                          <div class="col-md-9 col-xs-6 col-sm-6">
+                          <div class="col-md-3 col-xs-6 col-sm-6">
 
-                            <input type="text" id="input-nome" name="url" value=".<?php echo $simple_url; ?>" DISABLED>
+                            <input class="subdomain" type="text" name="subdominio" placeholder="estabelecimento" value="<?php echo subdomain( htmlclean( $dataestabelecimento['subdominio'] ) ); ?>">
 
                           </div>
 

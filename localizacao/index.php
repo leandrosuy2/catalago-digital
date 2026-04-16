@@ -14,7 +14,7 @@ if( $_COOKIE['cidade'] ) {
 	$cidade = mysqli_real_escape_string( $db_con, $_COOKIE['cidade'] );
 	$subdominio = data_info( "cidades",$cidade,"subdominio" );
 	if( $subdominio ) {
-		$gourl = $httprotocol.$subdominio.".".$simple_url;
+		$gourl = $httprotocol.$simple_url."/".$subdominio;
 		header("Location: ".$gourl);
 	}
 }
