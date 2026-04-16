@@ -58,10 +58,10 @@ $facebook ="https://www.facebook.com/produtosmktplw";
 
 // Db
 
-$db_host = getenv('DB_HOST') ?: "localhost";
-$db_user = getenv('DB_USER') ?: "catal251_admin3";
-$db_pass = getenv('DB_PASS') ?: "Admin@2302";
-$db_name = getenv('DB_NAME') ?: "catal251_banco2catalogo";
+$db_host = "pedeue_catal251_banco2catalogo";
+$db_user = "catal251_admin3";
+$db_pass = "Admin@2302";
+$db_name = "catal251_banco2catalogo";
 
 // SMTP
 
