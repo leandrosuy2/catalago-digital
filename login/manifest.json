@@ -1,14 +1,14 @@
 {
-  "name": "ReiDoScript! Admin",
-  "short_name": "ReiDoScript! Admin",
+  "name": "Shopping Place Admin",
+  "short_name": "Shopping Place",
   "theme_color": "#261C43",
   "background_color": "#261C43",
   "display": "fullscreen",
-  "Scope": "https://reidoscript.com/login/index.php",
-  "start_url": "https://reidoscript.com/login/index.php",
+  "Scope": "/login/index.php",
+  "start_url": "/login/index.php",
   "icons": [
     {
-      "src": "https://reidoscript.com/login/img/258x258.png",
+      "src": "/login/img/258x258.png",
       "sizes": "1080x1080",
       "type": "image/png"
     } 

@@ -453,7 +453,7 @@ $firstdomain = $firstdomain[0];
 
       //include("localizacao/index.php");
 
-      header("Location: https://catalogodgplwdesign.com/localizacao");
+      header("Location: ".$httprotocol.$simple_url."/localizacao");
 
     }
 

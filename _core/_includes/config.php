@@ -18,19 +18,21 @@ date_default_timezone_set('America/Sao_Paulo');
 
 $httprotocol = "https://";
 
-if( !$_SERVER['HTTPS'] ) {
+if( !$_SERVER['HTTPS'] && $_SERVER['HTTP_X_FORWARDED_PROTO'] != 'https' ) {
 	$fixprotocol = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	header("Location: ".$fixprotocol);
+	exit;
 }
 
-$suport_url = $httprotocol."conheca.catalogodgplwdesign.com/";
-$system_url = $httprotocol."catalogodgplwdesign.com/administracao";
-$panel_url = $httprotocol."catalogodgplwdesign.com/painel";
-$admin_url = $httprotocol."catalogodgplwdesign.com/administracao";
-$just_url = $httprotocol."catalogodgplwdesign.com";
-$app_url = $httprotocol."catalogodgplwdesign.com/app";
-$simple_url = "catalogodgplwdesign.com";
-$afiliado_url = $httprotocol."catalogodgplwdesign.com/afiliado";
+$simple_url = "pedeue-sistema-completo.zwykti.easypanel.host";
+
+$suport_url = $httprotocol."conheca.".$simple_url."/";
+$system_url = $httprotocol.$simple_url."/administracao";
+$panel_url = $httprotocol.$simple_url."/painel";
+$admin_url = $httprotocol.$simple_url."/administracao";
+$just_url = $httprotocol.$simple_url;
+$app_url = $httprotocol.$simple_url."/app";
+$afiliado_url = $httprotocol.$simple_url."/afiliado";
 
 // Comissão Afiliados
 $comissao_afiliados = "10";
@@ -56,10 +58,10 @@ $facebook ="https://www.facebook.com/produtosmktplw";
 
 // Db
 
-$db_host = "localhost";
-$db_user = "catal251_admin3";
-$db_pass = "Admin@2302";
-$db_name = "catal251_banco2catalogo";
+$db_host = getenv('DB_HOST') ?: "localhost";
+$db_user = getenv('DB_USER') ?: "catal251_admin3";
+$db_pass = getenv('DB_PASS') ?: "Admin@2302";
+$db_name = getenv('DB_NAME') ?: "catal251_banco2catalogo";
 
 // SMTP
 
