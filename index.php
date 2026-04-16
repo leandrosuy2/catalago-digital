@@ -30,18 +30,21 @@ $firstdomain = $firstdomain[0];
 
     $insubdominio = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
 
-    if( $insubdominio == $firstdomain ) {
+    if( $insubdominio == $firstdomain || $insubdominio == "www" || $insubdominio == "pedeue-sistema-completo" ) {
 
       $insubdominio = "";
 
     }
 
-    // if( $insubdominio == "www" ) {
+  }
 
-    //   header("location: ".$gowww);
-
-    // }
-
+  // Router - extrai da URL se não veio por GET
+  if( !$_GET['inrouter'] && $_SERVER['REQUEST_URI'] ) {
+    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri = ltrim($uri, '/');
+    if( $uri ) {
+      $_GET['inrouter'] = $uri;
+    }
   }
 
 
